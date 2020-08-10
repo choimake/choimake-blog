@@ -1,4 +1,5 @@
 import styles from './header.module.scss';
+import Link from 'next/link';
 
 type Props = {
   title: string;
@@ -15,7 +16,11 @@ const Header = ({ title, subTitle }: Props): JSX.Element => {
         </div>
         <nav className={styles.nav}>
           <ul className={styles.navList}>
-            <li className={styles.navItem}>Home</li>
+            <li className={styles.navItem}>
+              <Link href="/">
+                <a className={styles.navItemLink}>Home</a>
+              </Link>
+            </li>
             <li className={styles.navItem}>Profile</li>
           </ul>
         </nav>
