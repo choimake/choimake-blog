@@ -4,7 +4,7 @@ type Props = {
   title: string;
 };
 
-const Footer = ({ title }: Props) => {
+const Footer = ({ title }: Props): JSX.Element => {
   return (
     <>
       <footer className={styles.footer}>
