@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import Meta from '../components/meta';
 import Header from '../components/header';
+import Footer from '../components/footer';
+
+const title = 'まけぶろ';
+const subTitle = 'とあるエンジニアの独り言';
 
 function Index(): JSX.Element {
   return (
@@ -9,7 +13,8 @@ function Index(): JSX.Element {
       <Head>
         <title>Index</title>
       </Head>
-      <Header title="まけぶろ" subTitle="とあるエンジニアの独り言"></Header>
+      <Header title={title} subTitle={subTitle}></Header>
+      <Footer title={title}></Footer>
     </>
   );
 }
