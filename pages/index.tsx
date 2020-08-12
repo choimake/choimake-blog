@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Meta from '../components/meta';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Home from '../components/home';
+import Home from '../components/home/home';
 
 const title = 'まけぶろ';
 const subTitle = 'とあるエンジニアの独り言';
