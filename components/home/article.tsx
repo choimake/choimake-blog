@@ -1,7 +1,12 @@
 import classNames from 'classnames';
 import styles from './article.module.scss';
 
-const Article = (): JSX.Element => {
+type Props = {
+  title: string;
+  snippet: string;
+};
+
+const Article = ({ title, snippet }: Props): JSX.Element => {
   const articleClass = classNames(styles.article, styles.layoutArticle);
   return (
     <>
@@ -10,8 +15,8 @@ const Article = (): JSX.Element => {
           <img width="320" height="180" src="images/key-320x180.jpg" alt="key-image" />
         </figure>
         <div className={styles.contents}>
-          <h2 className={styles.title}>title</h2>
-          <p className={styles.snippet}>description</p>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.snippet}>{snippet}</p>
         </div>
       </article>
     </>

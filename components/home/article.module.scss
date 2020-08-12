@@ -1,9 +1,18 @@
+$article-color: #ffffff;
+$article-height: 200px;
+$contents-height: 180px;
+$article-shadow-color-first: rgba(0, 0, 0, 0.16);
+$article-shadow-color-second: rgba(0, 0, 0, 0.08);
+$title-font-size: 24px;
+$snippet-font-size: 16px;
+
 .article {
   display: flex;
   justify-content: flex-start;
   width: 90%;
-  height: 200px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  height: $article-height;
+  background-color: $article-color;
+  box-shadow: 0 2px 2px 0 $article-shadow-color-first, 0 0 0 1px $article-shadow-color-second;
   border-radius: 4px;
 }
 
@@ -16,14 +25,14 @@
 }
 
 .contents {
-  height: 180px;
+  height: $contents-height;
   margin: auto 0 auto 24px;
 }
 
 .title {
-  font-size: 24px;
+  font-size: $title-font-size;
 }
 
 .snippet {
-  font-size: 16px;
+  font-size: $snippet-font-size;
 }

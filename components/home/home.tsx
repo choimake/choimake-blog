@@ -6,7 +6,7 @@ const Home = (): JSX.Element => {
     <>
       <main className={styles.main}>
         <div className={styles.articles}>
-          <Article></Article>
+          <Article title="title" snippet="snippet"></Article>
         </div>
       </main>
     </>
